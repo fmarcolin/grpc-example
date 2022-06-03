@@ -1,0 +1,126 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "grpc-example",
+    "dateExported": "2022-06-03T19:30:51.245Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e27f8db0-0e48-423e-9627-556dfb27044f",
+            "colId": "33a1543f-c53a-4478-b441-7b060c0772f1",
+            "containerId": "",
+            "name": "session",
+            "url": "localhost:3333/sessions",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2022-06-03T02:18:33.416Z",
+            "modified": "2022-06-03T18:38:57.920Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"felipe@felipe\",\n    \"password\": \"123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4a77cd09-103c-4325-9065-8f7010efded8",
+            "colId": "33a1543f-c53a-4478-b441-7b060c0772f1",
+            "containerId": "",
+            "name": "register user",
+            "url": "localhost:3333/users",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2022-06-03T02:30:52.274Z",
+            "modified": "2022-06-03T02:31:36.731Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"felipe@felipe\",\n    \"username\": \"felipe\",\n    \"password\": \"123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5d2709df-7b97-4623-821d-1c0d26d81b40",
+            "colId": "33a1543f-c53a-4478-b441-7b060c0772f1",
+            "containerId": "",
+            "name": "get user by id",
+            "url": "localhost:3333/users/629983fa210233770939cadf",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2022-06-03T03:50:38.113Z",
+            "modified": "2022-06-03T03:50:55.775Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3d9c5040-2589-4984-9ee3-a282bf5fec33",
+            "colId": "33a1543f-c53a-4478-b441-7b060c0772f1",
+            "containerId": "",
+            "name": "purchase",
+            "url": "localhost:3333/purchases",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2022-06-03T18:35:32.512Z",
+            "modified": "2022-06-03T19:18:25.066Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"banana\",\n    \"value\": 2.22\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTk4M2ZhMjEwMjMzNzcwOTM5Y2FkZiIsImlhdCI6MTY1NDI4Mzg5MSwiZXhwIjoxNjU0ODg4NjkxfQ.Uy15seNwgMfqV4idV1gNIl0y5vnXz4UwMZ2QvPulni8"
+            },
+            "tests": []
+        },
+        {
+            "_id": "30fdbb90-79fd-45c6-85c7-467b8b07e052",
+            "colId": "33a1543f-c53a-4478-b441-7b060c0772f1",
+            "containerId": "",
+            "name": "list user purchases",
+            "url": "localhost:3333/purchases",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2022-06-03T19:21:26.667Z",
+            "modified": "2022-06-03T19:22:38.857Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTk4M2ZhMjEwMjMzNzcwOTM5Y2FkZiIsImlhdCI6MTY1NDI4Mzg5MSwiZXhwIjoxNjU0ODg4NjkxfQ.Uy15seNwgMfqV4idV1gNIl0y5vnXz4UwMZ2QvPulni8"
+            },
+            "tests": []
+        },
+        {
+            "_id": "658d5c87-8335-4cbf-bbad-24bd8fbe8009",
+            "colId": "33a1543f-c53a-4478-b441-7b060c0772f1",
+            "containerId": "",
+            "name": "list purchase by id",
+            "url": "localhost:3333/purchases/629a5e81a6c34a0c1d65b0d8",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2022-06-03T19:25:12.151Z",
+            "modified": "2022-06-03T19:25:35.975Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTk4M2ZhMjEwMjMzNzcwOTM5Y2FkZiIsImlhdCI6MTY1NDI4Mzg5MSwiZXhwIjoxNjU0ODg4NjkxfQ.Uy15seNwgMfqV4idV1gNIl0y5vnXz4UwMZ2QvPulni8"
+            },
+            "tests": []
+        }
+    ]
+}
